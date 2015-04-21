@@ -39,6 +39,7 @@ $(document).ready(function(){
 	};
 
 	mainFunction = function(){		   //main, listener on #hasherButton
+		
 		var uInput = $('#uInput').val(), 
 		uHash = uInput.hashCode(),
 		hashParsed = [],			//container for parsing hash to do math on digits
