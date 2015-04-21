@@ -1,24 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <script src="js/jquery-1.11.2.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+ 
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/pnglib.js"></script>
+    <script src="js/identicon.js"></script>
+    <script src="js/sha.js"></script>
     <script src="js/adjectives.js"></script>
+    <script src="js/nouns.js"></script>
     <script src="js/main.js"></script>
+    
 </head>
-<body>
-<div id="fontPreload"> 
-<div style="font-family: Lobster;">.</div>
-<div style="font-family: Pacifico;">.</div>
-<div style="font-family: Shadows-Into-Light">.</div>
-<div style="font-family: Indie-Flower;">.</div>
-<div style="font-family: Francois-One;">.</div>
-<div style="font-family: Dancing-Script;">.</div>
+<body style="background-color: #A7E2CD">
+<div id="fontPreload">                          <!-- Fonts Need To Be Pre-Loaded, Pardon The Ugly Hack -->
+    <div style="font-family: Lobster;">.</div>
+    <div style="font-family: Pacifico;">.</div>
+    <div style="font-family: Shadows-Into-Light">.</div>
+    <div style="font-family: Indie-Flower;">.</div>
+    <div style="font-family: Francois-One;">.</div>
+    <div style="font-family: Dancing-Script;">.</div>
 </div>
-<h1>Enter your text..</h1>
-<form>
-  <input type="text" id="uInput"><br>
-  <input type="button" onclick="mainFunction()" value="Submit" id="hasherButton">
-</form>
-<canvas width="200" height="200" id="myCanvas"></canvas>
+<div class="container">
+    <div class="row">
+    <h1 style="font-family:Dancing-Script;">Micah Martin - Descripticon</h1>
+     <hr/>
+    <p style="font-family:Francois-One;">Identicons And Descripticons are images generated from Hashes through user input. They're a fun way to uniquely identify friends!</p>
+
+
+    <div class="form-group">
+        <form>
+            <input class="form-control" placeholder="enter your text to be descripticon'd" type="text" id="uInput"><br>
+            <input  class="btn btn-primary btn-lg" type="button" onclick="mainFunction()" value="Submit" id="hasherButton">
+        </form>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6">
+    <canvas width="300" height="200" id="myCanvas"></canvas>
+    <img  class="img-thumbnail" id="show_identicon" width="210px" src="js/placeholder.png" >
+    </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+                    <div class="row">
+                        <div class="col-lg-6  text-left">
+                            <p class="text-muted ">
+
+                            </p>
+                            <p class="text-muted ">
+                                <a href="https://github.com/stewartlord/identicon.js">Made using identicon.js</a>
+                            </p>
+                            <p class="text-muted ">
+                                <a href="http://caligatio.github.io/jsSHA/">Made using jsSHA</a>
+                            </p>
+                            <p class="copyright text-muted credit">
+                               <a href="github.com/micahmartin">Micah Martin, 2015 </a>
+                            </p>
+
+                        </div>
+                        </div>
+
 </body>
 </html>

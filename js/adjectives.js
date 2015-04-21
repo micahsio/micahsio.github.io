@@ -1,4 +1,6 @@
-var Apperance_Adjectives = [
+var Adjectives = [
+ 
+Apperance_Adjectives=[
 	"beautiful",
 	"clean",
 	"drab",
@@ -8,25 +10,9 @@ var Apperance_Adjectives = [
 	"handsome",
 	"magnificent",
 	"old fashioned",
-	"plain",
-	"quaint",
-	"sparkling",
-	"ugliest",
-	"unsightly",
-	"wide eyed"
-];
-var Color_Adjectives = [
-	"red",
-	"orange",
-	"yellow",
-	"green",
-	"blue",
-	"purple",
-	"gray",
-	"black",
-	"white"
-];
-var Condition_Adjectives = [
+	"plain"
+],
+Condition_Adjectives = [
 	"alive",
 	"better",
 	"careful",
@@ -36,19 +22,9 @@ var Condition_Adjectives = [
 	"famous",
 	"gifted",
 	"helpful",
-	"important",
-	"inexpensive",
-	"mushy",
-	"odd",
-	"powerful",
-	"rich",
-	"shy",
-	"tender",
-	"uninterested",
-	"vast",
-	"wrong"
-];
-var bFeelings_Adjectives = [ //Bad Feelings
+	"important"
+],
+bFeelings_Adjectives = [ //Bad Feelings
 	"angry",
 	"bewildered",
 	"clumsy",
@@ -58,19 +34,9 @@ var bFeelings_Adjectives = [ //Bad Feelings
 	"grumpy",
 	"helpless",
 	"itchy",
-	"jealous",
-	"lazy",
-	"mysterious",
-	"nervous",
-	"obnoxious",
-	"panicky",
-	"repulsive",
-	"scary",
-	"thoughtless",
-	"uptight",
-	"worried" 
-];
-var gFeelings_Adjectives = [ //Good Feelings
+	"jealous"
+],
+gFeelings_Adjectives = [ //Good Feelings
 	"agreeable",
 	"brave",
 	"calm",
@@ -80,38 +46,9 @@ var gFeelings_Adjectives = [ //Good Feelings
 	"gentle",
 	"happy",
 	"jolly",
-	"kind",
-	"lively",
-	"nice",
-	"obedient",
-	"proud",
-	"relieved",
-	"silly",
-	"thankful",
-	"victorious",
-	"witty",
-	"zealous"
-];
-var Shape_Adjectives = [
-	"broad",
-	"chubby",
-	"crooked",
-	"curved",
-	"deep",
-	"flat",
-	"high",
-	"hollow",
-	"low",
-	"narrow",
-	"round",
-	"shallow",
-	"skinny",
-	"square",
-	"steep",
-	"straight",
-	"wide"
-];
-var Size_Adjectives = [
+	"kind"
+],
+Size_Adjectives = [
 	"big",
 	"colossal",
 	"fat",
@@ -122,18 +59,8 @@ var Size_Adjectives = [
 	"large",
 	"little",
 	"mammoth",
-	"massive",
-	"miniature",
-	"petite",
-	"puny",
-	"scrawny",
-	"small",
-	"tall",
-	"teeny",
-	"teenytiny",
-	"tiny"
-];
-var Sound_Adjectives = [
+],
+Sound_Adjectives = [
 	"cooing",
 	"deafening",
 	"faint",
@@ -143,13 +70,9 @@ var Sound_Adjectives = [
 	"noisy",
 	"purring",
 	"quiet",
-	"raspy",
-	"screeching",
-	"thundering",
-	"voiceless",
-	"whispering"
-];
-var Time_Adjectives = [
+	"sepia"
+],
+Time_Adjectives = [
 	"ancient",
 	"brief",
 	"early",
@@ -159,12 +82,9 @@ var Time_Adjectives = [
 	"old",
 	"old fashioned",
 	"quick",
-	"rapid",
-	"slow",
-	"swift",
-	"young"
-];
-var Taste_Adjectives = [
+	"rapid"
+],
+Taste_Adjectives = [
 	"bitter",
 	"delicious",
 	"fresh",
@@ -174,23 +94,9 @@ var Taste_Adjectives = [
 	"icy",
 	"loose",
 	"melted",
-	"nutritious",
-	"prickly",
-	"rainy",
-	"rotten",
-	"salty",
-	"sticky",
-	"strong",
-	"sweet",
-	"tart",
-	"tasteless",
-	"uneven",
-	"weak",
-	"wet",
-	"wooden",
-	"yummy" 
-];
-var Touch_Adjectives = [
+	"nutritious"
+],
+Touch_Adjectives = [
 	"boiling",
 	"breeze",
 	"broken",
@@ -200,22 +106,9 @@ var Touch_Adjectives = [
 	"cool",
 	"creepy",
 	"crooked",
-	"cuddly",
-	"curly",
-	"damaged",
-	"damp",
-	"dirty",
-	"dry",
-	"dusty",
-	"filthy",
-	"flaky",
-	"fluffy",
-	"freezing",
-	"hot",
-	"warm",
-	"wet" 
-];
-var Quantity_Adjectives = [
+	"cuddly"
+],
+Quantity_Adjectives = [
 	"abundant",
 	"empty",
 	"few",
@@ -226,4 +119,5 @@ var Quantity_Adjectives = [
 	"numerous",
 	"sparse",
 	"substantial"
+	]
 ];
