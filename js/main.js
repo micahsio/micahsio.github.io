@@ -39,7 +39,7 @@ $(document).ready(function(){
 	};
 
 	mainFunction = function(){		   //main, listener on #hasherButton
-		
+
 		var uInput = $('#uInput').val(), 
 		uHash = uInput.hashCode(),
 		hashParsed = [],			//container for parsing hash to do math on digits
@@ -54,9 +54,12 @@ $(document).ready(function(){
  		
 		/* Canvas Drawing */
 		var canvas = document.getElementById("myCanvas");
+		
 		var ctx = canvas.getContext("2d");
+		ctx.clearRect(0,0,canvas.width,canvas.height);
 		ctx.font = "20px Lobster";
 		ctx.fillText(phrase,10,60);
+
 
 		/* Identicon Drawing.... Using a third party library for this right here. */
 		 var shaObj = new jsSHA(uInput, "TEXT");
