@@ -1,13 +1,16 @@
 $(document).ready(function(){
-	String.prototype.hashCode = function(){
-		var hash = 0;
-		if (this.length == 0) return hash;
+
+	/* My version of Java's hashCode function... */
+	String.prototype.hashMe = function(){
+		var h = 0;
+		if (this.length == 0) return h;  //workaround
+
 		for (i = 0; i < this.length; i++) {
-			char = this.charCodeAt(i);
-			hash = ((hash<<5)-hash)+char;
-			hash = hash & hash;            // Convert to 32bit integer
+			c = this.charCodeAt(i);
+			h = ((h<<5)-h)+c;
+			h = h & h;
 		};
-		return Math.abs(hash);           //get rid of negative value hashes. Weird.
+		return Math.abs(h);           //Get rid of negative value hashes. Another workaround.
 	};
 	
 	phraseGenerator = function(key){
@@ -41,7 +44,7 @@ $(document).ready(function(){
 	mainFunction = function(){		   //main, listener on #hasherButton
 
 		var uInput = $('#uInput').val(), 
-		uHash = uInput.hashCode(),
+		uHash = uInput.hashMe(),
 		hashParsed = [],			//container for parsing hash to do math on digits
     	hashNumber = uHash.toString(); 
 
